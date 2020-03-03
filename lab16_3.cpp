@@ -40,7 +40,7 @@ vector<int> randomVector(int x){
 int dotProduct(vector<int> x,vector<int> y){
 	      int sum = 0;
 	      for(int i=0;i<x.size();i++){
-	      	sum =+ x[i]+y[i];
+	      	sum += x[i]*y[i];
 	    
 		  }
 		  return sum;
