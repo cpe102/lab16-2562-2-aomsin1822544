@@ -1,16 +1,17 @@
-  
+
 #include<iostream>
 using namespace std;
 
 //Write the definition of myString() here
-char myString(char *m,int k){
+char myString(char *p,int N){
    char *l = new char;
-      for(int i = 0;i < k;i++){
+      for(int i = 0;i < N;i++){
    	      l[i] = 'A'+i;
    	      cout << l[i];
    	   
 
 }
+	l[N] = '\0';
 }
 
 int main(){
