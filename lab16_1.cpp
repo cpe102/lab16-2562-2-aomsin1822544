@@ -1,4 +1,4 @@
-#include<iostream>
+##include<iostream>
 using namespace std;
 
 int main(){
@@ -24,7 +24,7 @@ int main(){
 	
 	for(int i=0; i < nA; i++){
 		for(int j=0; j < nB; j++) {
-			**C = A[i]*B[j];
+			C [i][j] = A[i]*B[j];
 		}
 	}
 	
@@ -37,11 +37,12 @@ int main(){
 	for(int i=0; i < nA; i++){
 		cout << A[i] << "\t";
 		for(int j=0; j < nB; j++) {
-			cout << A[i]*B[j] << "\t";
+			cout << C [i][j] << "\t";
 		}
 		cout << "\n";
 	}
      delete []A,B,C; 
 
+	for(int i;i<nA;i++) delete [] C[i];
 	return 0;
 }
